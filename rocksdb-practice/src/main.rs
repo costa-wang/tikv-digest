@@ -4,7 +4,7 @@ use rocksdb::{DB, Options};
 // NB: db is automatically closed at end of lifetime
 
 fn main() {
-    let path = "D:\\rocksdb";
+    let path = "/root/.rocksdb";
 {
    let db = DB::open_default(path).unwrap();
        db.put(b"my key", b"my value").unwrap();
